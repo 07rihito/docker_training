@@ -52,6 +52,30 @@ environmentの項目はファイルにベタ書きせずに別ファイルなど
 
 linksでservice同士をリンクさせていたが，現在は非推奨らしい．変わりにnetworksで同一のnetworkに所属させる．
 
+ディレクトリ構成は下記のようにする．
+
+```
+work
+|---docker-compose.yml
+|
+|---db
+     |
+     |
+|---web
+|
+├── docker-compose.yml
+├── db/
+│   ├── Dockerfile
+│   ├── data/
+│   ├── my.cnf
+│   ├── log/
+|   └── sql/
+└── web/
+    └── volume/
+```
+
+
+
 ```yaml
 version: '3.8'
 
