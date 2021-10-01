@@ -62,7 +62,7 @@ work
 │   ├── data/
 │   ├── my.cnf
 │   ├── log/
-|   └── sql/
+│   └── sql/
 └── web/
     └── volume/
 ```
