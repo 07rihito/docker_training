@@ -56,13 +56,6 @@ linksでservice同士をリンクさせていたが，現在は非推奨らし�
 
 ```
 work
-|---docker-compose.yml
-|
-|---db
-     |
-     |
-|---web
-|
 ├── docker-compose.yml
 ├── db/
 │   ├── Dockerfile
